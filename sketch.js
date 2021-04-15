@@ -37,11 +37,14 @@ function draw() {
   drawSprites();
 }
 
-function keyPressed(){
-	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper1.body,{x:685,y:685},40);
+function keyPressed() {
+	if (keyCode === UP_ARROW) {
+
+	  Matter.Body.applyForce(paper1.body,paper1.body.position,{x:115,y:-115});
+  
 	}
 }
+
 
 
 
